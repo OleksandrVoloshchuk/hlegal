@@ -1,0 +1,123 @@
+.cards-section {
+  border-radius: 0px 0px 12px 12px;
+  background: linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.section-link {
+  color: #24A3FF;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.section-link img {
+  width: 12px;
+  height: 12px;
+}
+
+.title-section {
+  background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  align-self: stretch;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  flex: 1 0 0;
+  text-decoration: none;
+}
+
+.card-title {
+  color: #24A3FF;
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.card-text {
+  color: #FFF;
+  line-height: 26px;
+  margin: 0;
+}
+
+.card-image {
+  border-radius: 24px;
+  background: #FFF;
+  display: flex;
+  padding: 14px;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media (min-width: 768px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+  .cards-section {
+    padding-top: 60px;
+  }
+  .wrapper {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  .title-section {
+    margin-bottom: 60px;
+    font-size: 38px;
+  }
+}
+@media (min-width: 1024px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1440px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1920px) {
+  .wrapper {
+    width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

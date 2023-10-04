@@ -1,0 +1,31 @@
+.cards-section {
+    border-radius: 0px 0px 12px 12px;
+    background: linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.section-link {
+    color: #24A3FF;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.section-link img {
+    width: 12px;
+    height: 12px;
+}
+
+.title-section {
+    background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
