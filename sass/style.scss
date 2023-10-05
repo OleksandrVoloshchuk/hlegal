@@ -1,20 +1,4 @@
-@import 'normalize';
-@import 'cards';
-@import 'cards-section';
-@import 'partners-cards';
-@import 'adaptive-partners-cards';
-@import 'adaptive-cards-section';
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.wrapper {
-    padding-left: 30px;
-    padding-right: 30px;
-}
+@use 'cards';
+@use 'cards-section';
+@use 'partners-cards';
+@use '_helpers'
