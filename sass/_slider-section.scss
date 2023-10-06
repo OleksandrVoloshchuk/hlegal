@@ -1,9 +1,9 @@
 .slider-card {
-    text-decoration: none;
     border-radius: 12px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    background: #F5F5FA;
 }
 
 .slider-image {
@@ -18,7 +18,6 @@
     padding: 30px;
     display: flex;
     flex-direction: column;
-    background: #F5F5FA;
 }
 
 .slider-content-title {

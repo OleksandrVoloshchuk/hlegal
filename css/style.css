@@ -666,12 +666,19 @@ body {
   padding-right: 30px;
 }
 
+.spacer {
+  width: 100%;
+  height: 60px;
+  border: 0;
+  margin: 0;
+}
+
 .slider-card {
-  text-decoration: none;
   border-radius: 12px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  background: #F5F5FA;
 }
 
 .slider-image {
@@ -686,7 +693,6 @@ body {
   padding: 30px;
   display: flex;
   flex-direction: column;
-  background: #F5F5FA;
 }
 
 .slider-content-title {
