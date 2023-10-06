@@ -4,12 +4,27 @@
     text-align: center;
 }
 
+.partners-title {
+    color: #323264;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
 .partners-link {
     height: 120px;
 }
 
 .partners-link:nth-child(n + 7) {
     display: none;
+}
+
+.partners-section .wrapper {
+    padding: 0;
 }
 
 .link1 {
@@ -187,7 +202,7 @@
 }
 
 @media (min-width: 1920px) {
-    .wrapper-partners {
+    .partners-section .wrapper {
         width: 1920px;
         padding-left: 100px;
         padding-right: 100px;
