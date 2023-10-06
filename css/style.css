@@ -671,6 +671,7 @@ body {
   border-radius: 12px;
   overflow: hidden;
   display: flex;
+  flex-direction: column;
 }
 
 .slider-image {
@@ -732,12 +733,6 @@ body {
   text-align: center;
 }
 
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
 @media (min-width: 768px) {
   .wrapper {
     padding-right: 60px;
@@ -748,6 +743,9 @@ body {
   .slider-image {
     height: 100%;
     width: 400px;
+  }
+  .slider-card {
+    flex-direction: row;
   }
 }
 @media (min-width: 1920px) {
