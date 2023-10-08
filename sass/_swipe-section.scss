@@ -1,0 +1,62 @@
+.swipe {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.swipe-drawer {
+    display: flex;
+    overflow-x: auto;
+}
+
+.swipe-drawer-inner {
+    display: flex;
+    gap: 30px;
+    flex-shrink: 0;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.swipe-link {
+    color: #B3B3BA;
+    font-size: 38px;
+    font-weight: 700;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.hero-link {
+    background: linear-gradient(90deg, #EF8080 0.84%, #F0145A 99.96%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.swipe-section hr {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.30);
+    margin: 0;
+    height: 4px;
+    border: 0;
+}
+
+.swipe-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.swipe-content-title {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.swipe-content-text {
+    color: #FFF;
+    font-size: 19px;
+    line-height: 30px;
+    margin: 0;
+}
+
