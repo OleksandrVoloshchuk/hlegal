@@ -35,7 +35,6 @@
   display: flex;
   padding: 14px;
   align-items: flex-start;
-  gap: 10px;
 }
 
 .cards-section {
@@ -562,6 +561,9 @@ body {
     width: 1600px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0;
+  }
+  .recommended-section {
     padding: 0;
   }
 }
