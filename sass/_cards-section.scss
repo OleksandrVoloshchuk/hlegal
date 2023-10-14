@@ -1,6 +1,5 @@
 .cards-section {
     border-radius: 0px 0px 12px 12px;
-    padding-top: 30px;
     padding-bottom: 60px;
     position: relative;
 }
@@ -12,6 +11,14 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+.section-link:hover {
+    color: #F0145A;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .section-link img {
@@ -58,9 +65,7 @@
         grid-template-columns: 1fr 1fr;
         gap: 60px;
     }
-    .cards-section {
-        padding-top: 60px;
-    }
+
     .wrapper {
         padding-right: 60px;
         padding-left: 60px;

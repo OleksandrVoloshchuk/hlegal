@@ -39,7 +39,6 @@
 
 .cards-section {
   border-radius: 0px 0px 12px 12px;
-  padding-top: 30px;
   padding-bottom: 60px;
   position: relative;
 }
@@ -51,6 +50,14 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.section-link:hover {
+  color: #F0145A;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .section-link img {
@@ -96,9 +103,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
-  }
-  .cards-section {
-    padding-top: 60px;
   }
   .wrapper {
     padding-right: 60px;
@@ -413,16 +417,6 @@ main {
   -webkit-text-fill-color: transparent;
 }
 
-.slider-content-link {
-  margin-bottom: 5px;
-  text-decoration: none;
-  color: #24A3FF;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
 .author {
   margin-top: 0;
   margin-bottom: 6px;
@@ -574,11 +568,9 @@ main {
   display: flex;
   flex-direction: column;
   gap: 30px;
-}
-
-.swipe-drawer {
-  display: flex;
-  overflow-x: auto;
+  width: 100%;
+  padding: 0;
+  justify-content: center;
 }
 
 .swipe-drawer-inner {
@@ -587,6 +579,11 @@ main {
   flex-shrink: 0;
   padding-right: 30px;
   padding-left: 30px;
+  overflow-x: auto;
+}
+
+.swipe-drawer-inner::-webkit-scrollbar {
+  display: none;
 }
 
 .swipe-link {
@@ -597,11 +594,28 @@ main {
   flex-shrink: 0;
 }
 
+.swipe-link:hover {
+  color: #F0145A;
+  text-align: right;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
 .hero-link {
   background: linear-gradient(90deg, #EF8080 0.84%, #F0145A 99.96%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.box-swipe-content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
+  gap: 30px;
 }
 
 .swipe-section hr {
@@ -632,13 +646,64 @@ main {
   margin: 0;
 }
 
+@media (min-width: 768px) {
+  .box-swipe-content {
+    padding-right: 60px;
+    padding-left: 60px;
+    gap: 60px;
+  }
+  .swipe-drawer-inner {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  .swipe {
+    gap: 60px;
+  }
+}
+@media (min-width: 1024px) {
+  .swipe {
+    flex-direction: row;
+    align-items: center;
+    max-width: 1360px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .box-swipe-content {
+    padding: 0;
+    flex-direction: row;
+    align-items: center;
+  }
+  .swipe-drawer-inner {
+    flex-direction: column;
+    text-align: right;
+    padding: 0;
+  }
+  .swipe-section hr {
+    width: 4px;
+    height: 303px;
+  }
+}
+@media (min-width: 1600px) {
+  .swipe {
+    padding: 0;
+  }
+}
 .hero-section {
   display: flex;
   flex-direction: column;
   gap: 30px;
   background: linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  padding-top: 30px;
 }
 
+@media (min-width: 768px) {
+  .hero-section {
+    gap: 60px;
+    padding-top: 60px;
+  }
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */

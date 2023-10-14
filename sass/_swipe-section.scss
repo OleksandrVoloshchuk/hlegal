@@ -2,11 +2,9 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-}
-
-.swipe-drawer {
-    display: flex;
-    overflow-x: auto;
+    width: 100%;
+    padding: 0;
+    justify-content: center;
 }
 
 .swipe-drawer-inner {
@@ -15,6 +13,11 @@
     flex-shrink: 0;
     padding-right: 30px;
     padding-left: 30px;
+    overflow-x: auto;
+}
+
+.swipe-drawer-inner::-webkit-scrollbar {
+    display: none;
 }
 
 .swipe-link {
@@ -25,11 +28,28 @@
     flex-shrink: 0;
 }
 
+.swipe-link:hover {
+    color: #F0145A;
+    text-align: right;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
 .hero-link {
     background: linear-gradient(90deg, #EF8080 0.84%, #F0145A 99.96%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.box-swipe-content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 30px;
 }
 
 .swipe-section hr {
@@ -60,3 +80,55 @@
     margin: 0;
 }
 
+@media (min-width: 768px) {
+    .box-swipe-content {
+        padding-right: 60px;
+        padding-left: 60px;
+        gap: 60px;
+    }
+
+    .swipe-drawer-inner {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+
+    .swipe {
+        gap: 60px;
+    }
+
+}
+
+@media (min-width: 1024px) { 
+    .swipe {
+        flex-direction: row;
+        align-items: center;
+        max-width: 1360px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .box-swipe-content {
+        padding: 0;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .swipe-drawer-inner {
+        flex-direction: column;
+        text-align: right;
+        padding: 0;
+    }
+
+    .swipe-section hr {
+        width: 4px;
+        height: 303px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .swipe {
+        padding: 0;
+    }
+}

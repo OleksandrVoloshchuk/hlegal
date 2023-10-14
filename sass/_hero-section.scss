@@ -3,4 +3,12 @@
     flex-direction: column;
     gap: 30px;
     background: linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    padding-top: 30px;
+}
+
+@media (min-width: 768px) {
+    .hero-section {
+        gap: 60px;
+        padding-top: 60px;
+    }
 }
